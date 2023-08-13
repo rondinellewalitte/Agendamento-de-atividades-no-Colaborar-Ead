@@ -11,7 +11,7 @@ Esta extensão para o Google Chrome foi desenvolvida para facilitar o agendament
 
 ## Captura de Tela
 
-![Captura de Tela da Extensão](link_para_sua_imagem.png)
+![Captura de Tela da Extensão](https://i.imgur.com/V6rzrF0.gif)
 
 ## Instruções de Instalação
 

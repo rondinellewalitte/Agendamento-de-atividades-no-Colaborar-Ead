@@ -53,10 +53,28 @@ function start(){
             `;
             firstSpan.appendChild(newScheduleSpan);
           } else {
-            console.log('Video href attribute not found.');
+            const timelineTitleElement = element.querySelector('.timeline-title');
+            const firstSpan = timelineTitleElement.querySelector('span:first-child');
+        
+            const newScheduleSpan = document.createElement('span');
+            newScheduleSpan.innerHTML = `
+              <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=${classNameText+" - "+classNameDetailText}&dates=${formatarData(classPeriodText)}" class="btn btn-default float-right btn-atvd-msg-tutor js-bootstrap-tooltip" target="_blank" title="" data-original-title="Criar um evento do Google Agenda">
+                <i class="fa fa-calendar" aria-hidden="true"></i> <span>Agendar</span>
+              </a>
+            `;
+            firstSpan.appendChild(newScheduleSpan);
           }
         } else {
-          console.log('Video link element not found.');
+            const timelineTitleElement = element.querySelector('.timeline-title');
+            const firstSpan = timelineTitleElement.querySelector('span:first-child');
+        
+            const newScheduleSpan = document.createElement('span');
+            newScheduleSpan.innerHTML = `
+              <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=${classNameText+" - "+classNameDetailText}&dates=${formatarData(classPeriodText)}" class="btn btn-default float-right btn-atvd-msg-tutor js-bootstrap-tooltip" target="_blank" title="" data-original-title="Criar um evento do Google Agenda">
+                <i class="fa fa-calendar" aria-hidden="true"></i> <span>Agendar</span>
+              </a>
+            `;
+            firstSpan.appendChild(newScheduleSpan);
         }
       }else{
         const classPeriodText = element.querySelector('.timeline-heading small:first-child').textContent.trim();
